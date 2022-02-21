@@ -233,4 +233,7 @@ height:85px;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
- 
+ .regPilt{
+     width:100%;
+     object-fit:cover;
+ }
