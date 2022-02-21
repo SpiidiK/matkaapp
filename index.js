@@ -20,7 +20,7 @@ const matk3 = {
   id: 2,
   nimetus: "Matk mägedes",
   kirjeldus: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ipsa sed quod reprehenderit ipsum veritatis accusamus nesciunt nisi saepe deserunt quaerat, sunt alias, voluptates illum aspernatur! Facilis qui sunt cum!",
-  pildiUrl: "./assets/Uudis2.jpg",
+  pildiUrl: "./assets/uudis2.jpg",
   osalejad: []
 }
 
