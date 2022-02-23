@@ -3,8 +3,7 @@
 
 <head>
   <%- include("../partials/head.ejs") %>
-    
-    <title>Registreerumine</title>
+     <title>Registreerumine</title>
 </head>
 
 <body>
@@ -12,7 +11,7 @@
         <div class="container">
             <div class="row pt-2 ">
                 <div class="col-12 col-md-5 d-flex">
-                    <img class="paisLogo" src="./assets/klubilogo.png" alt="">
+                    <img class="paisLogo" src="/assets/klubilogo.png" alt="">
                     <div class="paisNimi">
                         MATKA KLUBI
                     </div>
@@ -26,27 +25,24 @@
             
         </div>
     </div>
-    <h1>Registreeru matkale <%= matk.nimetus %> </h1>
+
+    
+    
+       
+        
+            
+       
+    <div class="container">
+
+      <h1>Registreeru matkale <%= matk.nimetus %> </h1>
       <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
       <p>
           <%= matk.kirjeldus %>
       </p>
-      
-      <div class="container">
        
-        <hr class="rounded">
-        <div class="sisend mb-1 ">
-            
-        </div>
-    </div>
-    <div class="container">
-      
-       
-      
-
         <div class="row kontakt jumbotron">
      
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-8 col-lg-offset-2 regform">
     
             
             <form id="contact-form" method="post" action="" role="form">
