@@ -26,7 +26,12 @@
             
         </div>
     </div>
-    
+    <h1>Registreeru matkale <%= matk.nimetus %> </h1>
+      <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
+      <p>
+          <%= matk.kirjeldus %>
+      </p>
+      
       <div class="container">
        
         <hr class="rounded">
@@ -36,13 +41,8 @@
     </div>
     <div class="container">
       
-     
+       
       
-        <h1>Registreeru matkale <%= matk.nimetus %> </h1>
-        <img class="regPilt" src="<%= matk.pildiUrl %>" alt="">
-        <p>
-            <%= matk.kirjeldus %>
-        </p>
 
         <div class="row kontakt jumbotron">
      

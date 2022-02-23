@@ -8,7 +8,7 @@
 
 <body>
     <div class="paisSektsioonuudised">
-        <div class="container">
+    <div class="container">
             <div class="row pt-2 ">
                 <div class="col-12 col-md-5 d-flex">
                     <img class="paisLogo" src="./assets/klubilogo.png" alt="">
@@ -23,19 +23,38 @@
                 </div>
             </div>
             
-        </div>
+     </div>
     </div>
     
-      <div class="container">
+  
+    
+    <div class="container uudisteSektsioon pt-4">
         <h1>Uudised</h1>
-        <hr class="rounded">
-        <div class="sisend mb-1 ">
-            
+        <div class="row">
+             <% for (let i=0; i < uudised.length; i++) { %>
+
+             <div class="col-md-4 card">
+                <img class="card-img top "src="<%= uudised[i].pildiUrl %>">
+                <div class="card-body">
+                    <h4 class="card-title"><%= uudised[i].nimetus %></h4>
+                    <p >
+                        <%= uudised[i].kirjeldus %>
+                    </p>
+                    <p>
+                       Kommentaarid:  <%= uudised[i].kommentaarid.length %>
+                    </p>
+                    
+
+                    <a href="#" class="btn btn-primary">Vaata edasi.</a>
+                </div>
+             </div>
+             <% } %>
+
+             
+             
         </div>
-        <div  id="valjund"></div>
     </div>
-    
-    <script src="./uudised.js"></script>
+   
 </body>
 
 </html>

@@ -8,9 +8,8 @@
 
 <body>
     <div class="paisSektsioon">
-        
         <div class="container">
-            <div class="row pt-2 ">
+            <div class="row pt-2">
                 <div class="col-12 col-md-5 d-flex">
                     <img class="paisLogo" src="./assets/klubilogo.png" alt="">
                     <div class="paisNimi">
@@ -18,19 +17,17 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-7 nav">
-
-                   <%- include("../partials/menyy.ejs") %>
-
+                  <%- include("../partials/menyy.ejs") %>
                 </div>
             </div>
-            <div class="row pt-2 ">
-                <div class=" col-lg-6 paisSektsioon-pealkirjad">
+            <div class="row">
+                <div class="col-lg-6 paisSektsioon-pealkirjad">
                     <div class="rida">
                         <h2>Matkaklubi</h2>
-                        <img class="liblikas1" src="./assets/Butterfly2.png" alt="">
+                        <img  class="liblikas1" src="./assets/Butterfly1.png" alt="">
                     </div>
                     <div class="rida">
-                        <img class="liblikas2" src="./assets/Butterfly1.png" alt="">
+                        <img src="./assets/Butterfly2.png" class="liblikas2" alt="">
                         <h1>Puhas Higi</h1>
                     </div>
                     <div class="rida">
@@ -38,20 +35,11 @@
                             Terves kehas terve vaim!
                         </h3>
                     </div>
-                    <div>
-                        <button type="button" class="nupp">Matkarajad</button>
-                    </div>
                 </div>
-                <div class="d-none d-lg-block col-lg-6">
-                    <div>
-                        <div class="ymmargunepilt">
-                        </div>
-                        <div class="vari"><img src="./assets/Shadow.png" alt="">
-                        </div>
-                    </div>
-
+                <div class="d-none d-lg-block col-lg-6 pealispilt">
+                    <img class="ymmargunepilt" src="assets/Image.png" alt="">
+                    <img class="vari" src="assets/Shadow.png" alt="">
                 </div>
-
             </div>
         </div>
     </div>
@@ -59,7 +47,7 @@
         <div class="row">
              <% for (let i=0; i < matkad.length; i++) { %>
 
-             <div class="col-md-3 card">
+             <div class="col-md-4 card">
                 <img class="card-img top "src="<%= matkad[i].pildiUrl %>">
                 <div class="card-body">
                     <h4 class="card-title"><%= matkad[i].nimetus %></h4>
@@ -81,6 +69,8 @@
         </div>
     </div>
    
+    
+
 </body>
 
 
