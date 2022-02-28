@@ -246,6 +246,7 @@ margin-right: auto;
 
 .registreerumine-pilt{
 width: 100%;
+padding-top: 30px;
 }
 .regform{
     margin-left: auto;
@@ -275,5 +276,9 @@ height: 79px;
 
 .pealkiri{
     padding-left: 15px;
+}
+
+.regamisform{
+ margin-top:50px
 }
 
