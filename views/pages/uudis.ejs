@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head.ejs") %>
+        <title>Uudised</title>
+</head>
+
+<body>
+    <div class="paisSektsioonuudised">
+        <div class="container">
+            <div class="row pt-2 ">
+                <div class="col-12 col-md-5 d-flex">
+                    <a href="/"> <img class="paisLogo" src="/assets/klubilogo.png" alt=""></a>
+                    <div class="paisNimi">
+                        MATKA KLUBI
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 nav">
+
+                    <%- include("../partials/menyy.ejs") %>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row yksikuudis">
+            <div class="pealkiri">
+                <h1>
+                    <%= uudis.nimetus %>
+                </h1>
+            </div>
+            <div>
+                <h1 class="komm">
+                    <%= uudis.kommentaarid %>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12"><p class="kirjeldus"><%= uudis.kirjeldus %></p></div>
+            <div class="col-12"><img class="uudispilt" src="<%= uudis.pildiUrl %>" alt="">
+
+            </div>
+            
+
+           
+        </div>
+        <div class="sisu">
+            <%= uudis.sisu %>
+        </div>
+        <div class="row">
+            <div class="col-11">
+               
+            </div>
+            <div class="col-1">
+                <a href="/uudised" class="btn btn-primary">Tagasi</a>
+            </div>
+
+           
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("../partials/head.ejs") %>
+    
+    <title>Kinnitus</title>
+</head>
+
+<body>
+    <div class="paisSektsioonuudised">
+        <div class="container">
+            <div class="row pt-2 ">
+                <div class="col-12 col-md-5 d-flex">
+                  <a href="/"> <img class="paisLogo" src="/assets/klubilogo.png" alt=""></a>
+                    <div class="paisNimi">
+                        MATKA KLUBI
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 nav">
+
+                    <%- include("../partials/menyy.ejs") %>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+      
+    <script> 
+        var v1 = parseInt("3.14"); 
+      
+        document.write('Using parseInt("3.14") = '
+        + v1 + "<br>"); 
+    </script> 
+   
+</body>
+
+</html>
