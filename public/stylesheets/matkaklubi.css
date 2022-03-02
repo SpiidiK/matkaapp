@@ -195,7 +195,9 @@ padding-bottom: 80px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 
+
 }
+
 .card-img-top{
    padding-top: 20px;
 }
@@ -206,7 +208,7 @@ padding-bottom: 80px;
   }
 
   
-  
+
 
   .jumbotron h1{
       line-height: 40px;
@@ -247,6 +249,7 @@ margin-right: auto;
 .registreerumine-pilt{
 width: 100%;
 padding-top: 30px;
+padding-bottom: 30px;
 }
 .regform{
     margin-left: auto;
@@ -276,9 +279,26 @@ height: 79px;
 
 .pealkiri{
     padding-left: 15px;
+ 
 }
 
 .regamisform{
  margin-top:50px
 }
 
+.matkamenyy{
+    padding: 30px;
+    background-color: white;
+    
+}
+.matkakirjeldus{
+    padding: 30px;
+    background-color: white;
+    
+}
+
+.pealkiri1{
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}

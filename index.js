@@ -134,10 +134,24 @@ if(!matk){
 
   console.log("Kõik matkajad:")
   console.log(matkad)
-  res.send("Registreeritud!")
-  res.redirect('/')
+  res.render('pages/kinnitus', {matk: matk})
 }
 
+function tagastaMatkad(req, res){
+res.send(matkad)
+}
+
+function tagastaOsalejad(req, res){
+  let matkaIndeks = req.params.matk
+  let vastusMassiiv = []
+  for (i in matkajad){
+    const osaleja = matkajad[i]
+    if (osaleja.id == matkaIndeks){
+      vastusMassiiv.push(osaleja)
+    }
+  }
+  res.send(vastusMassiiv)
+}
 
 
   express()
@@ -147,7 +161,9 @@ if(!matk){
   .get('/', (req, res) => res.render('pages/index', {matkad: matkad}))
   .get('/uudised', (req, res) => res.render('pages/uudised' , {uudised: uudised}))
   .get('/kontakt', (req, res) => res.render('pages/kontakt'))
-  .get('/registreerumine/:matk', naitaRegistreerimist)
+  .get('/registreerumine/:matk', naitaRegistreerimist) 
   .get('/uudis/:uudis', naitaUudist)
-  .get('/kinnitus', registreeriOsaleja)
+  .get('/kinnitus', registreeriOsaleja)// reg.query.matkaId
+  .get('/api/matk', tagastaMatkad)
+  .get('/api/matkaja/:matk', tagastaOsalejad)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))

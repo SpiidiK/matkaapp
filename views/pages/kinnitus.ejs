@@ -27,13 +27,46 @@
         </div>
     </div>
     
+    <div class="container regamisform">
+        <div class="row">
+            <div class="col-md-6 ">
+            <h1>Registreerumine  matkale <%= matk.nimetus %>  õnnestus!</h1>
+            <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
+        </div>
+        <div class="col-md-6">
+            <p>
+                <%= matk.kirjeldus %>
+            </p>
+            <div>
+                <form action="/kinnitus" method="get">
+                    <div class="form-group">
+                        <label for="nimi">Sinu nimi:</label>
+                        <input type="text" class="form-control" id="nimi" name="nimi">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Sinu email:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="markus">Märkus:</label>
+                        <textarea class="form-control" name="markus" id="markus" cols="30" rows="5"></textarea>
+                    </div>
+                   <input type="hidden" name="matkaId" value="<%= matk.id %>">
+                   <input type="submit" class="btn btn-default" value="Saada">
+                </form>
+            </div> 
+        </div> 
+        </div>
+      <div>
+         
+         <a href="/" class="btn btn-primary"> Tagasi esilehele</a>
+      </div>
+     
       
-    <script> 
-        var v1 = parseInt("3.14"); 
-      
-        document.write('Using parseInt("3.14") = '
-        + v1 + "<br>"); 
-    </script> 
+       
+       
+    
+      </div>
    
 </body>
 
