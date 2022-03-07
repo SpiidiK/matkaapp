@@ -16,14 +16,14 @@ const matk1 = {
   nimetus: "Matk kõrbes",
   kirjeldus: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ipsa sed quod reprehenderit ipsum veritatis accusamus nesciunt nisi saepe deserunt quaerat, sunt alias, voluptates illum aspernatur! Facilis qui sunt cum!",
   pildiUrl: "/assets/uudis1.jpg",
-  osalejad: ['mati@matkaja.ee', 'kati@matkajad.ee']
+  osalejad: []
 }
 const matk2 = {
   id: 1,
   nimetus: "Matk Piusas",
   kirjeldus: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ipsa sed quod reprehenderit ipsum veritatis accusamus nesciunt nisi saepe deserunt quaerat, sunt alias, voluptates illum aspernatur! Facilis qui sunt cum!",
   pildiUrl: "/assets/piusa.jpg",
-  osalejad: ['klaabu@suurmeri.ee' ]
+  osalejad: [ ]
 }
 
 
